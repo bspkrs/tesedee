@@ -26,6 +26,7 @@ def get_errors():
 def delete_errors():
     num_deleted = len(errors)
     errors.clear()
+    # I realize you didn't ask for this data to be returned, but here is it anyway.
     return jsonify(dict(error_records_deleted=num_deleted)), 200
 
 
